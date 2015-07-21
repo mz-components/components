@@ -57,7 +57,7 @@ function createRepos(repos, token, from) {
 
     github.repos.createFromOrg({
         name: repos,
-        org: 'fis-components',
+        org: 'mz-components',
         description: 'Fork from ' + from
     }, function (err, data) {
         if (err) {
@@ -216,7 +216,7 @@ if (ARGV[2] == 'sync') {
         lastChangFiles(sync);
     }
 } else if (ARGV[2] == 'create-repos') {
-    console.log('=sync.js create repos: https://github.com/fis-components/%s', ARGV[3]);
+    console.log('=sync.js create repos: https://github.com/mz-components/%s', ARGV[3]);
     createRepos(ARGV[3], ARGV[4], ARGV[5]);
 } else if (ARGV[2] == 'create-component.json') {
     var name = ARGV[3].trim();

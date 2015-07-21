@@ -16,13 +16,13 @@ git_update_repos () {
     node $ROOT/sync.js create-component.json $repos $version
 
     #AU
-    git config --global user.email "fansekey@gmail.com"
-    git config --global user.name "xiangshouding"
+    git config --global user.email "catgecn@gmail.com"
+    git config --global user.name "kaiye"
     git config credential.helper "store --file=.git/credential"
     echo "https://${GH_TOKEN}:@github.com" > .git/credential
 
     git add -A -f
-    git commit -m "based on https://github.com/fis-components/components/blob/master/modules/${repos}.js" -a
+    git commit -m "based on https://github.com/mz-components/components/blob/master/modules/${repos}.js" -a
 
     git push origin master
     git tag -a "$version" -m "create tag $version"
@@ -51,7 +51,7 @@ sync () {
         echo "=LOCAL rm -rf _${new}"
     fi
 
-    git_clone "https://github.com/fis-components/${new}" "_${new}"
+    git_clone "https://github.com/mz-components/${new}" "_${new}"
 
     if [ "$?" != "0" ]; then
         # new origin
@@ -59,7 +59,7 @@ sync () {
         if [ "$?" != "0" ]; then
             exit 1
         fi
-        git_clone "https://github.com/fis-components/${new}" "_${new}"
+        git_clone "https://github.com/mz-components/${new}" "_${new}"
         if [ "$?" != "0" ]; then
             exit 1
         fi
@@ -73,8 +73,8 @@ sync () {
                 echo "= Tag $version already exists, now deleting..."
 
                 #AU
-                git config --global user.email "fansekey@gmail.com"
-                git config --global user.name "xiangshouding"
+                git config --global user.email "catgecn@gmail.com"
+                git config --global user.name "kaiye"
                 git config credential.helper "store --file=.git/credential"
                 echo "https://${GH_TOKEN}:@github.com" > .git/credential
 
