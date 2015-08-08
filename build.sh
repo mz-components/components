@@ -16,8 +16,6 @@ git_update_repos () {
     node $ROOT/sync.js create-component.json $repos $version
 
     #AU
-    git config --global user.email "catgecn@gmail.com"
-    git config --global user.name "kaiye"
     git config credential.helper "store --file=.git/credential"
     echo "https://${GH_TOKEN}:@github.com" > .git/credential
 
