@@ -9,6 +9,7 @@ module.exports = (function() {
     name: 'zepto-scroll',
     main: 'zepto.scroll.js',
     dependencies: [
+      "zepto@~1.1.6"
     ],
     mapping: [
       {
