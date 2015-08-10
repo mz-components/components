@@ -332,5 +332,7 @@ if (ARGV[2] == 'sync') {
             console.log('convert done')
         });
     }
+} else {
+    console.error('Input invalid! Please check.')
 }
 
