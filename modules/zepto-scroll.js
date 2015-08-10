@@ -14,7 +14,7 @@ module.exports = (function() {
     mapping: [
       {
         reg: /^\/static\/zepto\.scroll\.js$/,
-        release: 'zeptp.scroll.js'
+        release: 'zepto.scroll.js'
       },
       {
         reg: /^\/static\/style\.css$/,

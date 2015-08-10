@@ -8,16 +8,13 @@ module.exports = (function() {
     description: "Most modern mobile touch slider with hardware accelerated transitions",
     name: "Swiper",
     main: "swiper.js",
-    dependencies: [
-      "zepto@~1.1.6"
-    ],
     mapping: [
       {
         reg: /^\/dist\/js\/(swiper\.js)$/,
         release: '$1'
       },
       {
-        reg: /^\/dist\/css\/(.*\.css)$/,
+        reg: /^\/dist\/css\/(swiper\.css)$/,
         release: '$1'
       },
 

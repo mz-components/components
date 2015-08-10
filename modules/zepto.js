@@ -8,7 +8,7 @@ module.exports = (function() {
         main: 'main.js',
         mapping: [
             {
-                reg: /^\/(.\js)$/,
+                reg: /^\/src\/(.*)$/,
                 release: '$1'
             },
             {

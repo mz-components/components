@@ -8,9 +8,6 @@ module.exports = (function() {
     description: "Zepto.js shim built full with all available modules.",
     name: "zepto-full",
     main: "zepto.js",
-    dependencies: [
-      "zepto@~1.1.6"
-    ],
     mapping: [
       {
         reg: /^\/zepto\.js$/,
@@ -24,6 +21,11 @@ module.exports = (function() {
         reg: "*",
         release: false
       }
-    ]
+    ],
+    shim: {
+      'zepto.js': {
+        'exports': ["Zepto"]
+      }
+    }
   }];
 })();
