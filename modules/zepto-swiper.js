@@ -35,5 +35,39 @@ module.exports = (function() {
         }
       }
     }
+  }, {
+    repos: 'https://github.com/nolimits4web/Swiper.git',
+    version: 'v3.1.2',
+    name: 'zepto-swiper',
+    main: 'swiper.js',
+    dependencies: [
+      "zepto@~1.1.6"
+    ],
+    mapping: [
+      {
+        reg: /^\/dist\/js\/swiper\.jquery\.js$/i,
+        release: 'swiper.js'
+      },
+      {
+        reg: /^\/dist\/css\/swiper\.css$/i,
+        release: 'swiper.css'
+      },
+      {
+        reg: /^\/README\.md$/,
+        release: '$&'
+      },
+      {
+        reg: '*',
+        release: false
+      }
+    ],
+    shim: {
+      'swiper.js': {
+        "replace": {
+          "from": /if\s\(typeof\s\$;if\s\(\!\$\)\sreturn;[\s\S]*?\}/g,
+          "to": "var $ = require('zepto');\nif (!$) return;"
+        }
+      }
+    }
   }];
 })();

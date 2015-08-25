@@ -20,7 +20,7 @@ module.exports = (function() {
         }],
       shim: {
         'iscroll-lite.js': {
-          "exports": ["Zepto"]
+          "exports": [""]
         }
       }
     }];
