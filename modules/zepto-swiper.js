@@ -66,7 +66,7 @@ module.exports = (function() {
         "replace": {
           //"from": /if\s\(typeof\s\$\s\!==\s'undefined'[\s\S]*?if\s\(\!\$\)\sreturn;[\s\S]*?\}/g,
           "from": /if\s\(typeof\s\$\s\!==\s'undefined'[\s\S]*?return;[\s\S]*?\}/g,
-          "to": "var $ = require('zepto');\n            if (!$) return;"
+          "to": "var $ = require('zepto');\n        if (!$) return;"
         }
       }
     }
