@@ -27,5 +27,32 @@ module.exports = (function() {
         release: false
       }
     ]
-  }]
+  },
+  {
+    repos: "https://github.com/nolimits4web/Swiper.git",
+    version: "v2.7.6",
+    description: "Most modern mobile touch slider with hardware accelerated transitions",
+    name: "swiper",
+    main: "swiper.js",
+    mapping: [
+      {
+        reg: /^\/dist\/idangerous\.swiper\.js$/,
+        release: 'swiper.js'
+      },
+      {
+        reg: /^\/dist\/idangerous\.swiper\.css$/,
+        release: 'swiper.css'
+      },
+
+      {
+        reg: /^\/README\.md$/,
+        release: '$&'
+      },
+      {
+        reg: "*",
+        release: false
+      }
+    ]
+  }
+  ]
 })();
