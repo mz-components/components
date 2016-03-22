@@ -195,6 +195,20 @@ node test.js modules/xxx.js
 
 可以支持批量转化，比如: `node test.js modules/jquery-*.js`.
 
+## 同步组件至组件库
+规则测试通过之后，就可以同步该组件到fis组件库里了
+
+
+如果组件库components 里没有该组件版本，先创建一个该名字空的版本 components/xxx
+
+然后配置环境变量GH_TOKEN 为自己的github ssh key
+```
+export GH_TOKEN='你的github ssh 私钥'
+```
+最后运行以下命令同步组件即可
+```
+node sync.js sync modules/xxx.js
+```
 ## 如何使用私有平台
 
 相信大家都比较关心私有组件平台如何搭建。
