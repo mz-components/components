@@ -4,7 +4,7 @@ module.exports = (function() {
 
   return [{
         repos: "https://github.com/ciaoca/cxSelect.git",
-        version: "v1.3.11",
+        version: "1.3.11",
         description: "地区联动插件 jquery-cxselect",
         name: "jquery-cxselect",
         main: "jquery-cxselect.js",
@@ -13,19 +13,20 @@ module.exports = (function() {
         ],
         mapping: [
             {
-                reg: /\.min\.(js|css)$/,
+                reg: /\.min\.(js|css|json)$/,
                 release: false
             },
             {
-                reg: /^\/jquery\-cxselect\.js$/,
+                reg: /^\/js\/.*?\.json$/,
                 release: '$&'
             },
             {
-                reg: /^\.json$/,
+                reg: /^\/js\/jquery\.cxselect\.js$/,
                 release: '$&'
             },
+
             {
-                reg: /^\/readme\.md$/,
+                reg: /\/readme\.md$/,
                 release: '$&'
             },
             {
