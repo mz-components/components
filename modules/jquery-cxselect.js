@@ -7,7 +7,7 @@ module.exports = (function() {
         version: "1.3.11",
         description: "地区联动插件 jquery-cxselect",
         name: "jquery-cxselect",
-        main: "jquery-cxselect.js",
+        main: "jquery.cxselect.js",
         dependencies: [
             "jquery@>=1.7"
         ],
