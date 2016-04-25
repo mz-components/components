@@ -17,16 +17,16 @@ module.exports = (function() {
                 release: false
             },
             {
-                reg: /^\/js\/.*?\.json$/,
-                release: '$&'
+                reg: /^\/js\/(.*?\.json)$/,
+                release: '$1'
             },
             {
-                reg: /^\/js\/jquery\.cxselect\.js$/,
-                release: '$&'
+                reg: /^\/js\/(jquery\.cxselect\.js)$/,
+                release: '$1'
             },
 
             {
-                reg: /.*\.md$/,
+                reg: /^\/READEME\.md$/,
                 release: '$&'
             },
             {
