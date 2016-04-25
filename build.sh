@@ -71,8 +71,8 @@ sync () {
                 echo "= Tag $version already exists, now deleting..."
 
                 #AU
-                git config --global user.email "catgecn@gmail.com"
-                git config --global user.name "kaiye"
+                # git config --global user.email "catgecn@gmail.com"
+                # git config --global user.name "kaiye"
                 git config credential.helper "store --file=.git/credential"
                 echo "https://${GH_TOKEN}:@github.com" > .git/credential
 

@@ -26,7 +26,7 @@ module.exports = (function() {
             },
 
             {
-                reg: /readme\.md$/,
+                reg: /.*\.md$/,
                 release: '$&'
             },
             {
