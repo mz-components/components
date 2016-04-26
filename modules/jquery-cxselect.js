@@ -17,8 +17,12 @@ module.exports = (function() {
                 release: false
             },
             {
-                reg: /^\/js\/(.*?\.json)$/,
-                release: '$1'
+                reg: /^\/js\/(cityData\.json)$/,
+                release: 'city-data.json'
+            },
+            {
+                reg: /^\/js\/(globalData\.json)$/,
+                release: 'global-data.json'
             },
             {
                 reg: /^\/js\/(jquery\.cxselect\.js)$/,
