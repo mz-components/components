@@ -28,9 +28,8 @@ module.exports = (function() {
                 reg: /^\/js\/(jquery\.cxselect\.js)$/,
                 release: '$1'
             },
-
             {
-                reg: /^\/READEME\.md$/,
+                reg: /^\/README\.md$/,
                 release: '$&'
             },
             {
