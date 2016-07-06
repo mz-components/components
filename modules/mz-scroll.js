@@ -5,7 +5,7 @@ module.exports = (function() {
   return [
     {
       repos: "https://github.com/zhzhchwin/mz-scroll.git",
-      version: "v1.0.2",
+      version: "v1.0.3",
       description: "mz-scroll jquery 插件",
       name: "mz-scroll",
       main: "mz-scroll.js",
